@@ -37,14 +37,14 @@ export default function HomeAppBar() {
           <Box
             sx={{
               display: { xs: "none", sm: "flex" },
-              gap: "12px",
+              gap: "36px",
             }}
           >
             <Typography className="button-menu" sx={{ color: "#E4BE6A" }}>
-              About Us
+              Nosotres
             </Typography>
             <Typography className="button-menu" sx={{ color: "#E4BE6A" }}>
-              Contact
+              Contacto
             </Typography>
           </Box>
         </Toolbar>

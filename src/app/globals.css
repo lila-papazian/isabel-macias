@@ -39,3 +39,37 @@ body {
   padding: 0 12px;
   width: inherit
 }
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto;
+  /* Adapt slide size to its content */
+  min-width: 0;
+  max-width: 100%;
+  /* Prevent from growing larger than viewport */
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+section {
+  padding-top: 48px;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  min-height: 48px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
