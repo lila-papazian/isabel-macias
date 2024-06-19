@@ -36,8 +36,8 @@ export default function HomeCarousel() {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
-        {SLIDES.map((imgSrc) => (
-          <div className="embla__slide">
+        {SLIDES.map((imgSrc, index) => (
+          <div className="embla__slide" key={index}>
             <Image src={imgSrc} alt="alt" />
           </div>
         ))}
