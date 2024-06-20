@@ -1,7 +1,10 @@
+"use client";
 import HomeAppBar from "@/components/HomeAppBar";
 import HomeCarousel from "@/components/HomeCarousel";
+
 import Script from "next/script";
 import Image from "next/image";
+import Link from "next/link";
 
 import instagramButton from "../../public/boton instagram.png";
 import facebookButton from "../../public/boton facebook.png";
@@ -10,9 +13,14 @@ import mailButton from "../../public/boton mail.png";
 import "./globals.css";
 
 export default function Home() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main>
-      <HomeAppBar />
+      <HomeAppBar scrollTo={scrollToSection} />
       <div className="header" style={{ width: "100%" }}>
         <img
           src="/header4.png"
@@ -51,9 +59,15 @@ export default function Home() {
               gap: "32px",
             }}
           >
-            <Image src={facebookButton} alt="facebook button" width={64} />
-            <Image src={instagramButton} alt="Instagram button" width={64} />
-            <Image src={mailButton} alt="mail button" width={64} />
+            <a
+              href={"https://www.instagram.com/isabelmacias_arte/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={instagramButton} alt="Instagram button" width={64} />
+            </a>
+            {/* <Image src={facebookButton} alt="facebook button" width={64} /> */}
+            {/* <Image src={mailButton} alt="mail button" width={64} /> */}
           </div>
         </section>
       </div>

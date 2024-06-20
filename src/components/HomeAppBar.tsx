@@ -1,3 +1,4 @@
+"use client";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -5,7 +6,13 @@ import IconButton from "@mui/material/IconButton";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Typography from "@mui/material/Typography";
 
-export default function HomeAppBar() {
+interface Props {
+  scrollTo: (sectionId: string) => void;
+}
+
+export default function HomeAppBar({ scrollTo }: Props) {
+
+  const handleScroll = (sectionId: string) => scrollTo(sectionId)
   return (
     <Box
       sx={{
@@ -40,10 +47,14 @@ export default function HomeAppBar() {
               gap: "36px",
             }}
           >
-            <Typography className="button-menu" sx={{ color: "#E4BE6A" }}>
+            {/* <Typography className="button-menu" sx={{ color: "#E4BE6A" }}>
               Nosotres
-            </Typography>
-            <Typography className="button-menu" sx={{ color: "#E4BE6A" }}>
+            </Typography> */}
+            <Typography
+              className="button-menu"
+              sx={{ color: "#E4BE6A" }}
+              onClick={() => handleScroll("bio")}
+            >
               Contacto
             </Typography>
           </Box>
