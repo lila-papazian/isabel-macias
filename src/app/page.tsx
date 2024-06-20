@@ -22,26 +22,16 @@ export default function Home() {
       </div>
       <div className="body">
         <section id="vimeo">
-          <div
-            style={{
-              padding: "56.25% 0 0 0",
-              position: "relative",
-              color: "#0A0A0A",
-            }}
-          >
-            <iframe
-              src="https://player.vimeo.com/video/791279077?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&title=0&byline=0&portrait=0&loop=1&autoplay=1&&controls=false"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-              }}
-              title="Reel stop motion - SanQuirino Estudio"
-            ></iframe>
+          <div className="iframe-container">
+            <div className="iframe-wrapper">
+              <iframe
+                className="iframe"
+                src="https://player.vimeo.com/video/791279077?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&title=0&byline=0&portrait=0&loop=1&autoplay=1&&controls=false"
+                allow="autoplay; fullscreen;"
+                allowFullScreen
+                title="Reel stop motion - SanQuirino Estudio"
+              ></iframe>
+            </div>
             <Script id="vimeo-script">{`https://player.vimeo.com/api/player.js`}</Script>
           </div>
         </section>
