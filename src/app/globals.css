@@ -40,7 +40,7 @@ body {
   width: inherit
 }
 
-.embla {
+/* .embla {
   overflow: hidden;
 }
 
@@ -52,13 +52,11 @@ body {
 .embla__slide {
   position: relative;
   flex: 0 0 auto;
-  /* Adapt slide size to its content */
   min-width: 0;
   max-width: 100%;
-  /* Prevent from growing larger than viewport */
   margin-right: 24px;
   margin-left: 24px;
-}
+} */
 
 section {
   padding-top: 48px;
@@ -72,4 +70,45 @@ section {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
+}
+
+.embla {
+  position: relative;
+  max-width: 100%;
+  /* Ensures the carousel doesn't exceed the container width */
+  margin: 0 auto;
+  /* Centers the carousel within its container */
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  /* Ensures each slide takes up the full width of the container */
+  flex: 0 0 100%;
+  /* Prevents slides from shrinking */
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.embla__slide__inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.embla__slide__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

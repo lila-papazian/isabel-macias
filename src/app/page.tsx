@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="carousel" style={{ width: "80vw", margin: "auto" }}>
+        <section id="carousel">
           <HomeCarousel />
         </section>
 

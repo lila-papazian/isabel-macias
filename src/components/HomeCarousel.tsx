@@ -31,16 +31,24 @@ const SLIDES = [
 ];
 
 export default function HomeCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true });
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        {SLIDES.map((imgSrc, index) => (
-          <div className="embla__slide" key={index}>
-            <Image src={imgSrc} alt="alt" />
-          </div>
-        ))}
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {SLIDES.map((imgSrc, index) => (
+            <div className="embla__slide" key={index}>
+              <div className="embla__slide__inner">
+                <Image
+                  className="embla__slide__img"
+                  src={imgSrc}
+                  alt={`Slide ${index}`}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
