@@ -30,6 +30,7 @@ export default function Home() {
                 allow="autoplay; fullscreen;"
                 allowFullScreen
                 title="Reel stop motion - SanQuirino Estudio"
+                style={{ outline: "none" }}
               ></iframe>
             </div>
             <Script id="vimeo-script">{`https://player.vimeo.com/api/player.js`}</Script>
