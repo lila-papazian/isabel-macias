@@ -4,20 +4,19 @@ import HomeCarousel from "@/components/HomeCarousel";
 
 import Script from "next/script";
 import Image from "next/image";
-import Link from "next/link";
 
-import instagramButton from "../../public/boton instagram.png";
-import facebookButton from "../../public/boton facebook.png";
-import mailButton from "../../public/boton mail.png";
+import instagramButton from "../../../public/boton instagram.png";
 
-import "./globals.css";
+import { useTranslations } from "next-intl";
+
+import "./../globals.css";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
-
+  const t = useTranslations("Home");
   return (
     <main>
       <HomeAppBar scrollTo={scrollToSection} />
@@ -71,9 +70,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="footer">
-        Isabel Macias – Todos los derechos reservados
-      </div>
+      <div className="footer">{`Isabel Macias – ${t("footer")}`}</div>
     </main>
   );
 }

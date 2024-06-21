@@ -5,12 +5,15 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Typography from "@mui/material/Typography";
+import { useTranslations } from "next-intl";
 
 interface Props {
   scrollTo: (sectionId: string) => void;
 }
 
 export default function HomeAppBar({ scrollTo }: Props) {
+
+    const t = useTranslations("Home");
 
   const handleScroll = (sectionId: string) => scrollTo(sectionId)
   return (
@@ -29,7 +32,7 @@ export default function HomeAppBar({ scrollTo }: Props) {
         <Toolbar
           sx={{ justifyContent: "flex-end", alignItems: "center", gap: "12px" }}
         >
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -39,11 +42,11 @@ export default function HomeAppBar({ scrollTo }: Props) {
             }}
           >
             <MenuRoundedIcon sx={{ color: "#E4BE6A" }} />
-          </IconButton>
+          </IconButton> */}
 
           <Box
             sx={{
-              display: { xs: "none", sm: "flex" },
+              // display: { xs: "none", sm: "flex" },
               gap: "36px",
             }}
           >
@@ -55,7 +58,7 @@ export default function HomeAppBar({ scrollTo }: Props) {
               sx={{ color: "#E4BE6A" }}
               onClick={() => handleScroll("bio")}
             >
-              Contacto
+              {t("appBar.contactUs")}
             </Typography>
           </Box>
         </Toolbar>
