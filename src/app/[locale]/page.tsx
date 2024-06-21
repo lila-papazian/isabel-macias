@@ -37,7 +37,7 @@ export default function Home() {
             gap: "4px",
           }}
         >
-          <Typography>{t("menu.distribution")}:</Typography>
+          <Typography sx={{fontWeight: 'bold'}}>{t("menu.distribution")}:</Typography>
           <a
             href="/tejedoras-de-mampujan"
             className="button-menu"

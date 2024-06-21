@@ -181,11 +181,9 @@ export default function TejedorasDeMampujan() {
 
         <Box
           display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
           gap="6px"
-          sx={{ paddingBottom: "24px" }}
+          sx={{ marginBottom: "96px" }}
+          alignItems="center"
         >
           <Typography
             className="title"
@@ -200,13 +198,12 @@ export default function TejedorasDeMampujan() {
             style={{
               color: "black",
               textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "large",
+              fontWeight: 700,
+              fontSize: "larger",
             }}
           >
             <Typography
               sx={{
-                paddingBottom: "12px",
                 fontWeight: 700,
                 fontSize: "larger",
               }}
@@ -220,6 +217,7 @@ export default function TejedorasDeMampujan() {
       <div
         className="footer"
         style={{
+          marginTop: "24px",
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
@@ -229,12 +227,19 @@ export default function TejedorasDeMampujan() {
           src={footer}
           alt="Footer"
           style={{
-            position: "absolute",
             width: "100%",
             height: "auto",
           }}
         />
-        <div style={{ paddingBottom: "0.75rem", color: "#E4BE6A", zIndex: 3, fontSize: '0.75rem' }}>
+        <div
+          style={{
+            paddingBottom: "0.75rem",
+            color: "#E4BE6A",
+            zIndex: 3,
+            fontSize: "0.75rem",
+            position: "absolute",
+          }}
+        >
           {t("MampujanWeavers")}-{t("footer")}
         </div>
       </div>
