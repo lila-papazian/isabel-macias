@@ -20,7 +20,7 @@ export default function Home() {
   };
   const t = useTranslations("Home");
   return (
-    <main>
+    <main style={{ backgroundColor: "#0A0A0A", color: "#E4BE6A" }}>
       <HomeAppBar scrollTo={scrollToSection} />
       <div className="header" style={{ width: "100%" }}>
         <img
@@ -38,7 +38,15 @@ export default function Home() {
           }}
         >
           <Typography>{t("menu.distribution")}:</Typography>
-          <a href="/tejedoras-de-mampujan" className="button-menu" style={{color: "inherit", textDecoration: 'none', fontWeight: 'bold'}}>
+          <a
+            href="/tejedoras-de-mampujan"
+            className="button-menu"
+            style={{
+              color: "inherit",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
             <Typography>{t("projects.mampujanWeavers")}</Typography>
           </a>
         </Box>
