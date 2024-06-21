@@ -39,7 +39,8 @@ body {
 
 .body {
   padding: 0 12px;
-  width: inherit
+  width: 90%;
+  margin: 0 auto;
 }
 
 section {

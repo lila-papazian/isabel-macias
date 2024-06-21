@@ -12,10 +12,9 @@ interface Props {
 }
 
 export default function HomeAppBar({ scrollTo }: Props) {
+  const t = useTranslations("Home");
 
-    const t = useTranslations("Home");
-
-  const handleScroll = (sectionId: string) => scrollTo(sectionId)
+  const handleScroll = (sectionId: string) => scrollTo(sectionId);
   return (
     <Box
       sx={{

@@ -1,13 +1,15 @@
 "use client";
 import HomeAppBar from "@/components/HomeAppBar";
 import HomeCarousel from "@/components/HomeCarousel";
+import Box from "@mui/material/Box";
 
 import Script from "next/script";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import instagramButton from "../../../public/boton instagram.png";
 
-import { useTranslations } from "next-intl";
+import Typography from "@mui/material/Typography";
 
 import "./../globals.css";
 
@@ -28,6 +30,19 @@ export default function Home() {
         />
       </div>
       <div className="body">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            gap: "4px",
+          }}
+        >
+          <Typography>{t("menu.distribution")}:</Typography>
+          <a href="/tejedoras-de-mampujan" className="button-menu" style={{color: "inherit", textDecoration: 'none', fontWeight: 'bold'}}>
+            <Typography>{t("projects.mampujanWeavers")}</Typography>
+          </a>
+        </Box>
+
         <section id="vimeo">
           <div className="iframe-container">
             <div className="iframe-wrapper">
@@ -43,11 +58,9 @@ export default function Home() {
             <Script id="vimeo-script">{`https://player.vimeo.com/api/player.js`}</Script>
           </div>
         </section>
-
         <section id="carousel">
           <HomeCarousel />
         </section>
-
         <section id="bio" style={{ marginBottom: "48px" }}>
           <div
             style={{
