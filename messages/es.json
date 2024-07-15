@@ -1,0 +1,33 @@
+{
+  "Home": {
+    "appBar": {
+      "contactUs": "Contacto"
+    },
+    "menu": {
+      "distribution": "Películas en distribución"
+    },
+    "projects": {
+      "mampujanWeavers": "Tejedoras de Mampuján"
+    },
+    "footer": "Todos los derechos reservados"
+  },
+  "Mampujan": {
+    "MampujanWeavers": "Tejedoras de Mampujan",
+    "Synopsis": "Sinopsis",
+    "Trailer": "Tráiler",
+    "Behind the scenes": "Detrás de escena",
+    "Credits": "Créditos",
+    "Press kit": "Kit de prensa",
+    "Gallery": "Galería",
+    "Synopsis Text": "Año 2000, un pueblo en Montes de María, Colombia, es acusado de colaborar con un grupo guerrillero, y sufre una incursión de los paramilitares, en la que realizan masacres, y producen un desplazamiento masivo de cientos de familias. <br></br> En medio de todo, un colectivo de mujeres, las Tejedoras de Mampuján, realizan tapices como terapia al trauma, reconstrucción de la memoria y apuesta por la paz.",
+    "Documental material": "Material documental",
+    "Displacement": "Desplazamiento",
+    "Displacement origin": "Origen del desplazamiento",
+    "Description": "Tapices originales Tejedoras de Mampuján 2009 <br></br> Bordado en tela <br></br> Cortesía Fundación Puntos de Encuentro <br></br> Universidad Externado de Colombia",
+    "Credits first column": "DIRECCIÓN GENERAL Isabel Macias <br></br> GUIÓN Luz Marquez, Valentina Cayetano Kelly <br></br> PRODUCCIÓN GENERAL Loana Ferrero <br></br> ANIMACIÓN Isabel Macias, Walter Guarracino <br></br> DISEÑO Y POSTPRODUCCIÓN SONORA Alejandro Biko Gunkel <br></br> MÚSICA ORIGINAL, VOCES Y TAMBORES Catalina Gutierrez, Ezequiel Silva, Diego Noscué <br></br> GRABACIÓN Eliana Cogliati <br></br> DÉCIMAS Sebastian Gómez @cantacolombia <br></br> DIRECCIÓN DE ARTE Y REALIZACIÓN GENERAL Isabel Macias <br></br>",
+    "Credits second column": "REALIZACIÓN DE PUPETS Malenca Felce, Loana Ferrero <br></br> REALIZACIÓN DE PROPS Malenca Felce <br></br> ASISTENCIA DE REALIZACIÓN Victoria Esplugas <br></br> ASISTENCIA TRANSCRIPCIÓN Diana Papazian <br></br> ASISTENCIA DE COMPOSICIÓN Sofia Gatti, Lucho Tortolini, Agustín Gibert, Mauro Duarte <br></br> CORRECCIÓN DE COLOR Nadia Amorena <br></br> DISEÑO WEB Lila Papazian <br></br> DISTRIBUCIÓN Animation 1908",
+    "Contact us": "Contactanos",
+    "Email": "Envianos un email a ",
+    "footer": "Todos los derechos reservados"
+  }
+}

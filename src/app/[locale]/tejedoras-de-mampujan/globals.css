@@ -1,0 +1,19 @@
+body {
+    min-height: 100svh;
+    min-height: 100vh;
+
+    width: 100svw;
+    width: 100vw;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: white;
+    color: black;
+
+    overflow-x: hidden;
+}
+
+.body {
+    padding-top: 24px;
+}
