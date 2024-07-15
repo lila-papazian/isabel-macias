@@ -1,19 +1,51 @@
+:root {
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 12rem);
+  --fs-600: 2rem;
+  --fs-400: 1rem;
+  --fs-200: 0.75rem
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-600: 3rem;
+    --fs-400: 1.750rem;
+  }
+}
+
 body {
-    min-height: 100svh;
-    min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100vh;
 
-    width: 100svw;
-    width: 100vw;
+  width: 100svw;
+  width: 100vw;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .body {
-    padding-top: 24px;
+  padding-top: 24px;
 }
+
+.text-small {
+    font-size: var(--fs-200);
+}
+
+.text {
+  font-size: var(--fs-400);
+}
+
+.text-large {
+  font-size: var(--fs-600);
+}
+
+.text-xl {
+  font-size: var(--fs-xl);
+}
+
+
