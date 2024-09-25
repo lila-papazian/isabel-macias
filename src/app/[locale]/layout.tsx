@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+import "./../reset.css"
 import "./../globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 

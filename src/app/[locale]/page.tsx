@@ -10,10 +10,7 @@ import { useTranslations } from "next-intl";
 import instagramButton from "../../../public/boton instagram.png";
 import facebookButton from "../../../public/boton facebook.png";
 import mailButton from "../../../public/boton mail.png";
-
-import Typography from "@mui/material/Typography";
-
-import "./../globals.css";
+import headerImg from "../../../public/headerImg.webp";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -22,36 +19,32 @@ export default function Home() {
   };
   const t = useTranslations("Home");
   return (
-    <main style={{ backgroundColor: "#0A0A0A", color: "#E4BE6A" }}>
-      <HomeAppBar scrollTo={scrollToSection} />
-      <div className='header' style={{ width: "100%" }}>
-        <img
-          src='/header4.png'
-          alt='isabel macias'
-          style={{ objectFit: "contain", height: "100%", width: "100%" }}
+    <body>
+      <div>
+        <HomeAppBar scrollTo={scrollToSection} />
+        <Image
+          src={headerImg}
+          alt='Isabel Macias, embroided in yellow over black cloth background'
+          sizes='100vw'
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
         />
       </div>
-      <div className='body'>
+
+      <main>
         <Box
           sx={{
             display: "flex",
             flexDirection: "row",
+            flexWrap: "wrap",
             gap: "4px",
           }}
         >
-          <Typography sx={{ fontWeight: "bold" }}>
-            {t("menu.distribution")}:
-          </Typography>
-          <a
-            href='/tejedoras-de-mampujan'
-            className='button-menu'
-            style={{
-              color: "inherit",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            <Typography>{t("projects.mampujanWeavers")}</Typography>
+          <p className='label'>{t("menu.distribution")}:</p>
+          <a href='/tejedoras-de-mampujan' className='button-menu link-label'>
+            <p>{t("projects.mampujanWeavers")}</p>
           </a>
         </Box>
 
@@ -70,10 +63,12 @@ export default function Home() {
             <Script id='vimeo-script'>{`https://player.vimeo.com/api/player.js`}</Script>
           </div>
         </section>
+
         <section id='carousel'>
           <HomeCarousel />
         </section>
-        <section id='bio' style={{ marginBottom: "48px" }}>
+
+        <section id='bio'>
           <div
             style={{
               display: "flex",
@@ -103,8 +98,12 @@ export default function Home() {
             </a>
           </div>
         </section>
-      </div>
-      <div className='footer'>{`Isabel Macias – ${t("footer")}`}</div>
-    </main>
+      </main>
+
+      <div
+        className='footer'
+        style={{ cursor: "default" }}
+      >{`Isabel Macias – ${t("footer")}`}</div>
+    </body>
   );
 }
