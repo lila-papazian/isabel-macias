@@ -11,9 +11,9 @@ export default function HomeAppBar({ scrollTo }: Props) {
   const handleScroll = (sectionId: string) => scrollTo(sectionId);
 
   return (
-    <div className='appBar'>
+    <div className='app-bar'>
       <p
-        className='button-menu contact-label'
+        className='button-menu'
         onClick={() => handleScroll("bio")}
       >
         {t("appBar.contactUs")}

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
-import "./../reset.css"
-import "./../globals.css";
+
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Isabel Macias",
@@ -29,6 +29,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
         </NextIntlClientProvider>
+        <Script id='vimeo-script'>{`https://player.vimeo.com/api/player.js`}</Script>
       </body>
     </html>
   );
