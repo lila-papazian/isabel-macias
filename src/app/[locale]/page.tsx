@@ -23,7 +23,7 @@ export default function Home() {
 
   const t = useTranslations("Home");
   return (
-    <>
+    <div style={{ backgroundColor: " #0a0a0a", color: "#e4be6a" }}>
       <header>
         <HomeAppBar scrollTo={scrollToSection} />
         <Image
@@ -94,6 +94,6 @@ export default function Home() {
       </main>
 
       <footer>{`Isabel Macias – ${t("footer")}`}</footer>
-    </>
+    </div>
   );
 }

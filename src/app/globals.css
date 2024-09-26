@@ -77,8 +77,6 @@ body {
 
 main {
   padding: var(--spacing);
-  background-color: inherit;
-  color: inherit;
 }
 
 .movie-list {
@@ -119,7 +117,4 @@ footer {
   align-items: center;
   padding: var(--spacing);
   cursor: default;
-
-  background-color: inherit;
-  color: inherit;
 }
