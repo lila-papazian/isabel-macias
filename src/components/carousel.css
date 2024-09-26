@@ -1,0 +1,34 @@
+.embla {
+  width: 100%;
+  padding: 4.5%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__slide__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__slide__img {
+  object-fit: cover; /* Ensure image covers slide */
+  width: 100%;
+  height: 100%;
+}

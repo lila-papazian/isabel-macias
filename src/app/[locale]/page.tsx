@@ -1,97 +1,99 @@
 "use client";
-import HomeAppBar from "@/components/HomeAppBar";
-import HomeCarousel from "@/components/HomeCarousel";
-import Box from "@mui/material/Box";
+import "./../reset.css";
+import "./../globals.css";
 
-import Script from "next/script";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import instagramButton from "../../../public/boton instagram.png";
+import instagramButton from "../../../public/boton instagram.webp";
+import facebookButton from "../../../public/boton facebook.webp";
+import mailButton from "../../../public/boton mail.webp";
+import headerImg from "../../../public/headerImg.webp";
 
-import Typography from "@mui/material/Typography";
-
-import "./../globals.css";
+import HomeAppBar from "@/components/HomeAppBar";
+import FramedContent from "@/components/FramedContent";
+import Carousel from "@/components/Carousel";
+import { carouselOptions, HOME_SLIDES } from "@/utils";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
   };
+
   const t = useTranslations("Home");
   return (
-    <main style={{ backgroundColor: "#0A0A0A", color: "#E4BE6A" }}>
-      <HomeAppBar scrollTo={scrollToSection} />
-      <div className="header" style={{ width: "100%" }}>
-        <img
-          src="/header4.png"
-          alt="isabel macias"
-          style={{ objectFit: "contain", height: "100%", width: "100%" }}
+    <div style={{ backgroundColor: " #0a0a0a", color: "#e4be6a" }}>
+      <header>
+        <HomeAppBar scrollTo={scrollToSection} />
+        <Image
+          src={headerImg}
+          alt='Isabel Macias, embroidered in yellow over black cloth'
+          className='header-img'
         />
-      </div>
-      <div className="body">
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "4px",
-          }}
-        >
-          <Typography sx={{fontWeight: 'bold'}}>{t("menu.distribution")}:</Typography>
-          <a
-            href="/tejedoras-de-mampujan"
-            className="button-menu"
-            style={{
-              color: "inherit",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            <Typography>{t("projects.mampujanWeavers")}</Typography>
-          </a>
-        </Box>
+      </header>
 
-        <section id="vimeo">
-          <div className="iframe-container">
-            <div className="iframe-wrapper">
-              <iframe
-                className="iframe"
-                src="https://player.vimeo.com/video/791279077?badge=0&autopause=0&player_id=0&app_id=58479&muted=1&title=0&byline=0&portrait=0&loop=1&autoplay=1&&controls=false"
-                allow="autoplay; fullscreen;"
-                allowFullScreen
-                title="Reel stop motion - SanQuirino Estudio"
-                style={{ outline: "none", border: "none", boxShadow: "none" }}
-              ></iframe>
-            </div>
-            <Script id="vimeo-script">{`https://player.vimeo.com/api/player.js`}</Script>
-          </div>
+      <main>
+        <div className='movie-list'>
+          <p className='label'>{t("menu.distribution")}:</p>
+          <a href='/tejedoras-de-mampujan' className='button-menu'>
+            <p>{t("projects.mampujanWeavers")}</p>
+          </a>
+        </div>
+
+        <section id='our-work'>
+          <FramedContent>
+            <iframe
+              src='https://player.vimeo.com/video/791279077'
+              title='Embedded content'
+              width='100%'
+              height='100%'
+              style={{ border: "none" }}
+            />
+          </FramedContent>
+
+          <FramedContent>
+            <Carousel slides={HOME_SLIDES} options={carouselOptions} />
+          </FramedContent>
         </section>
-        <section id="carousel">
-          <HomeCarousel />
-        </section>
-        <section id="bio" style={{ marginBottom: "48px" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexGrow: 1,
-              gap: "32px",
-            }}
-          >
+
+        <section id='bio'>
+          <div className='contact-container'>
             <a
-              href={"https://www.instagram.com/isabelmacias_arte/"}
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.instagram.com/isabelmacias_arte/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              <Image src={instagramButton} alt="Instagram button" width={64} />
+              <Image
+                src={instagramButton}
+                alt='Instagram button'
+                className='contact-button'
+              />
             </a>
-            {/* <Image src={facebookButton} alt="facebook button" width={64} /> */}
-            {/* <Image src={mailButton} alt="mail button" width={64} /> */}
+            <a
+              href='https://www.facebook.com/isabel.macias.5'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Image
+                src={facebookButton}
+                alt='facebook button'
+                className='contact-button'
+              />
+            </a>
+
+            <a href='mailto:sanquirinoestudio@gmail.com'>
+              <Image
+                src={mailButton}
+                alt='mail button'
+                className='contact-button'
+              />
+            </a>
           </div>
         </section>
-      </div>
-      <div className="footer">{`Isabel Macias – ${t("footer")}`}</div>
-    </main>
+      </main>
+
+      <footer>{`Isabel Macias – ${t("footer")}`}</footer>
+    </div>
   );
 }

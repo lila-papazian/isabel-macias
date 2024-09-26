@@ -1,35 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(
+    16px,
+    1.5vw,
+    24px
+  ); /* Adjust root font-size based on viewport */
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem; /* Bigger font size for larger screens */
+  }
+}
+
 body {
   min-height: 100svh;
   min-height: 100vh;
 
-  width: 100svw;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
 
   padding: 0;
   margin: 0;
 
-  background-color: #0A0A0A;
-  color: #E4BE6A;
+  background-color: #0a0a0a;
+  color: #e4be6a;
 
   overflow-x: hidden;
+
+  --spacing: 2rem;
+}
+
+.app-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: var(--spacing);
 }
 
 .button-menu {
   position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .button-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   border-radius: 4px;
-  background-color: #E4BE6A;
+  background-color: #e4be6a;
   bottom: 0;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .button-menu:hover::before {
@@ -37,21 +70,44 @@ body {
   transform: scaleX(1);
 }
 
-.body {
-  padding: 0 12px;
-  width: 90%;
-  margin: 0 auto;
+.header-img {
+  width: 100%;
+  height: auto;
 }
 
-section {
-  padding-top: 48px;
+main {
+  padding: var(--spacing);
 }
 
-section#vimeo {
-  padding-top: 0;
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  cursor: default
 }
 
-.footer {
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+.contact-button {
+  width: 2rem;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .contact-button {
+    width: 4rem;
+  }
+}
+
+footer {
   position: static;
   bottom: 0;
   min-height: 48px;
@@ -59,81 +115,6 @@ section#vimeo {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-}
-
-.embla__slide__inner {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.embla__slide__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.iframe-container {
-  width: 100%;
-  color: transparent;
-  background-color: transparent;
-  background-image: url('../../public/un\ recuadro\ limpio\ copia.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
-
-.iframe-wrapper {
-  padding-top: 56.25%;
-  position: relative;
-  width: 75%;
-  height: 75%;
-  margin: 0 auto;
-}
-
-.iframe {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  background-image: url('../../public/un\ recuadro\ limpio\ copia.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.embla {
-  width: 80%;
-}
-
-.embla__viewport {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.container::after {
-  content: "";
-  display: block;
-  padding-bottom: 56.25%;
+  padding: var(--spacing);
+  cursor: default;
 }
