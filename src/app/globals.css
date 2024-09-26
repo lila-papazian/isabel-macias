@@ -2,38 +2,17 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px; /* Base font size */
+:root {
+  font-size: clamp(
+    16px,
+    1.5vw,
+    24px
+  ); /* Adjust root font-size based on viewport */
 }
 
-/* For browsers that support clamp  */
-@supports (font-size: clamp(1rem, 1vi, 1rem)) {
-  :root {
-    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
-    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
-    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
-    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
-  }
-  @media screen and (min-width: 1280px) {
-    :root {
-      --fs-base: clamp(2rem, 2vw + 0.8rem, 2.5rem);
-      --fs-md: clamp(2.75rem, 5vw + 2rem, 3.5rem);
-    }
-  }
-}
-/* For browsers that don't support clamp */
-@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
-  :root {
-    --fs-sm: 0.8rem;
-    --fs-base: 1rem;
-    --fs-md: 1.25rem;
-    --fs-lg: 1.56rem;
-  }
-  @media screen and (min-width: 1280px) {
-    :root {
-      --fs-base: 2rem;
-      --fs-md: 2.75rem;
-    }
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.5rem; /* Bigger font size for larger screens */
   }
 }
 
@@ -52,10 +31,10 @@ body {
 
   overflow-x: hidden;
 
-  --spacing: 24px;
+  --spacing: 2rem;
 }
 
-.appBar {
+.app-bar {
   position: absolute;
   top: 0;
   width: 100%;
@@ -68,6 +47,8 @@ body {
 .button-menu {
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .button-menu::before {
@@ -89,19 +70,44 @@ body {
   transform: scaleX(1);
 }
 
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
 main {
   padding: var(--spacing);
 }
 
-section {
-  padding-top: 48px;
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  cursor: default
 }
 
-section#vimeo {
-  padding-top: 0;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 2rem;
 }
 
-.footer {
+.contact-button {
+  width: 2rem;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .contact-button {
+    width: 4rem;
+  }
+}
+
+footer {
   position: static;
   bottom: 0;
   min-height: 48px;
@@ -109,100 +115,6 @@ section#vimeo {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-}
-
-.embla__slide__inner {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.embla__slide__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.iframe-container {
-  width: 100%;
-  color: transparent;
-  background-color: transparent;
-  background-image: url("../../public/un\ recuadro\ limpio\ copia.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
-
-.iframe-wrapper {
-  padding-top: 56.25%;
-  position: relative;
-  width: 75%;
-  height: 75%;
-  margin: 0 auto;
-}
-
-.iframe {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  background-image: url("../../public/un\ recuadro\ limpio\ copia.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.embla {
-  width: 80%;
-}
-
-.embla__viewport {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.container::after {
-  content: "";
-  display: block;
-  padding-bottom: 56.25%;
-}
-
-.contact-label {
-  font-size: var(--fs-base);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.label {
-  font-size: var(--fs-md);
-  font-weight: bold;
+  padding: var(--spacing);
   cursor: default;
-}
-
-.link-label {
-  font-size: var(--fs-base);
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
 }
