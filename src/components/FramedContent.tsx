@@ -6,7 +6,7 @@ type Props = {
   frameSrc?: string;
 };
 
-const FrameWithContent = ({ children, frameSrc = "/frame.webp" }: Props) => {
+const FrameWithContent = ({ children, frameSrc = "/home/frame.webp" }: Props) => {
   return (
     <>
       <div className='frame-container'>

@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <section id='our-work'>
-          <FramedContent>
+          <FramedContent frameSrc="/home/frame.webp">
             <iframe
               src='https://player.vimeo.com/video/791279077'
               title='Embedded content'
