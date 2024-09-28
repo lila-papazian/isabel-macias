@@ -3,15 +3,16 @@ import "./framedContent.css";
 
 type Props = {
   children?: React.ReactNode;
+  frameSrc?: string;
 };
 
-const FrameWithContent = ({ children }: Props) => {
+const FrameWithContent = ({ children, frameSrc = "/frame.webp" }: Props) => {
   return (
     <>
       <div className='frame-container'>
         <div className='frame-image'>
           <Image
-            src='/frame.webp'
+            src={frameSrc}
             aria-hidden={true}
             alt='Custom Frame'
             priority={true}

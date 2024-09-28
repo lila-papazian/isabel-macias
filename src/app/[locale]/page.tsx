@@ -5,10 +5,10 @@ import "./../globals.css";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import instagramButton from "../../../public/boton instagram.webp";
-import facebookButton from "../../../public/boton facebook.webp";
-import mailButton from "../../../public/boton mail.webp";
-import headerImg from "../../../public/headerImg.webp";
+import instagramButton from "../../../public/home/boton instagram.webp";
+import facebookButton from "../../../public/home/boton facebook.webp";
+import mailButton from "../../../public/home/boton mail.webp";
+import headerImg from "../../../public/home/headerImg.webp";
 
 import HomeAppBar from "@/components/HomeAppBar";
 import FramedContent from "@/components/FramedContent";
@@ -23,7 +23,7 @@ export default function Home() {
 
   const t = useTranslations("Home");
   return (
-    <div style={{ backgroundColor: " #0a0a0a", color: "#e4be6a" }}>
+    <div style={{ backgroundColor: "#0a0a0a", color: "#e4be6a" }}>
       <header>
         <HomeAppBar scrollTo={scrollToSection} />
         <Image
@@ -38,6 +38,9 @@ export default function Home() {
           <p className='label'>{t("menu.distribution")}:</p>
           <a href='/tejedoras-de-mampujan' className='button-menu'>
             <p>{t("projects.mampujanWeavers")}</p>
+          </a>
+          <a href='/memorias' className='button-menu'>
+            <p>{t("projects.memories")}</p>
           </a>
         </div>
 
