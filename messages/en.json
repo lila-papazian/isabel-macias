@@ -7,7 +7,8 @@
       "distribution": "Shorts in distribution"
     },
     "projects": {
-      "mampujanWeavers": "Mampujan Weavers"
+      "mampujanWeavers": "Mampujan Weavers",
+      "memories": "Memories"
     },
     "footer": "All Rights Reserved"
   },
@@ -29,5 +30,9 @@
     "Contact us": "Contact us",
     "Email": "Send us an email at ",
     "footer": "All Rights Reserved"
+  },
+  "Memory": {
+    "description": "When it comes to memory, what hurts is that which finds no place in the weave. What can’t be mended and remains as a frayed hole. <br></br> Again and again we settle a hand on the painful spot, as dogs lick their wounds. <br></br> Sometimes we can darn it. And the tongue that licked now begins to speak.",
+    "credits": "Direction and animation ISABEL MACIAS <br></br> Sound design and original music ALEJANDRO BIKO GUNKEL <br></br> Color Correction NADIA ANTONELLA AMORENA <br></br> Web Design LILA PAPAZIAN <br></br> Distribution ANIMATION1908  info@animation1908.com"
   }
 }
