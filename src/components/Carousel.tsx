@@ -9,13 +9,14 @@ import "./carousel.css";
 type Props = {
   slides: any[];
   options?: EmblaOptionsType;
+  className?: string;
 };
 
-const Carousel = ({ slides, options }: Props) => {
+const Carousel = ({ slides, options, className }: Props) => {
   const [emblaRef] = useEmblaCarousel(options, [Autoplay()]);
 
   return (
-    <section className='embla'>
+    <section className={`embla ${className}`}>
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container'>
           {slides.map((imgSrc, index) => (

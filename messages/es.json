@@ -4,10 +4,11 @@
       "contactUs": "Contacto"
     },
     "menu": {
-      "distribution": "Películas en distribución"
+      "distribution": "Cortos en distribución"
     },
     "projects": {
-      "mampujanWeavers": "Tejedoras de Mampuján"
+      "mampujanWeavers": "Tejedoras de Mampuján",
+      "memories": "Memorias"
     },
     "footer": "Todos los derechos reservados"
   },
@@ -29,5 +30,9 @@
     "Contact us": "Contactanos",
     "Email": "Envianos un email a ",
     "footer": "Todos los derechos reservados"
+  },
+  "Memory": {
+    "description": "De la memoria duele lo que no encuentra lugar en la trama. Lo que no puede ser tejido, lo que permanece como hueco roto. <br></br> Una y otra vez llevamos la mano al dolor, como el perro que lame sus heridas. <br></br> A veces podemos zurcir. Y la lengua con la que nos lamíamos comienza a hablar.",
+    "credits": "Dirección y animación ISABEL MACIAS <br></br> Diseño sonoro y música original ALEJANDRO BIKO GUNKEL <br></br> Corrección de color NADIA ANTONELLA AMORENA <br></br> Diseño web LILA PAPAZIAN <br></br> Distribución ANIMATION 1908 info@animation1908.com"
   }
 }
