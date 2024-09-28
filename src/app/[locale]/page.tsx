@@ -39,6 +39,7 @@ export default function Home() {
           <a href='/tejedoras-de-mampujan' className='button-menu'>
             <p>{t("projects.mampujanWeavers")}</p>
           </a>
+          -
           <a href='/memorias' className='button-menu'>
             <p>{t("projects.memories")}</p>
           </a>
