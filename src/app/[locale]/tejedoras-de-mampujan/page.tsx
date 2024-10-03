@@ -83,6 +83,7 @@ export default function TejedorasDeMampujan({
         >
           {MAMPUJAN_STORYBOARD.map((story: StaticImport, index: number) => (
             <Image
+              key={index}
               src={story}
               alt={`Story ${index}`}
               style={{ height: "50%", objectFit: "cover" }}
