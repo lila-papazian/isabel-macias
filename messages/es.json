@@ -13,26 +13,16 @@
     "footer": "Todos los derechos reservados"
   },
   "Mampujan": {
-    "MampujanWeavers": "Tejedoras de Mampujan",
-    "Synopsis": "Sinopsis",
-    "Trailer": "Tráiler",
-    "Behind the scenes": "Detrás de escena",
-    "Credits": "Créditos",
-    "Press kit": "Kit de prensa",
-    "Gallery": "Galería",
-    "Synopsis Text": "Año 2000, un pueblo en Montes de María, Colombia, es acusado de colaborar con un grupo guerrillero, y sufre una incursión de los paramilitares, en la que realizan masacres, y producen un desplazamiento masivo de cientos de familias. <br></br> En medio de todo, un colectivo de mujeres, las Tejedoras de Mampuján, realizan tapices como terapia al trauma, reconstrucción de la memoria y apuesta por la paz.",
-    "Documental material": "Material documental",
-    "Displacement": "Desplazamiento",
-    "Displacement origin": "Origen del desplazamiento",
-    "Description": "Tapices originales Tejedoras de Mampuján 2009 <br></br> Bordado en tela <br></br> Cortesía Fundación Puntos de Encuentro <br></br> Universidad Externado de Colombia",
-    "Credits first column": "DIRECCIÓN GENERAL Isabel Macias <br></br> GUIÓN Luz Marquez, Valentina Cayetano Kelly <br></br> PRODUCCIÓN GENERAL Loana Ferrero <br></br> ANIMACIÓN Isabel Macias, Walter Guarracino <br></br> DISEÑO Y POSTPRODUCCIÓN SONORA Alejandro Biko Gunkel <br></br> MÚSICA ORIGINAL, VOCES Y TAMBORES Catalina Gutierrez, Ezequiel Silva, Diego Noscué <br></br> GRABACIÓN Eliana Cogliati <br></br> DÉCIMAS Sebastian Gómez @cantacolombia <br></br> DIRECCIÓN DE ARTE Y REALIZACIÓN GENERAL Isabel Macias <br></br>",
-    "Credits second column": "REALIZACIÓN DE PUPETS Malenca Felce, Loana Ferrero <br></br> REALIZACIÓN DE PROPS Malenca Felce <br></br> ASISTENCIA DE REALIZACIÓN Victoria Esplugas <br></br> ASISTENCIA TRANSCRIPCIÓN Diana Papazian <br></br> ASISTENCIA DE COMPOSICIÓN Sofia Gatti, Lucho Tortolini, Agustín Gibert, Mauro Duarte <br></br> CORRECCIÓN DE COLOR Nadia Amorena <br></br> DISEÑO WEB Lila Papazian <br></br> DISTRIBUCIÓN Animation 1908",
-    "Contact us": "Contactanos",
-    "Email": "Envianos un email a ",
-    "footer": "Todos los derechos reservados"
+    "synopsis": "Sinopsis",
+    "directorsStatement": "Declaración de la directora",
+    "synopsisDescription": "Año 2000. Un pueblo campesino en las montañas de Colombia es señalado de colaborar con grupos guerrilleros y sufre represalias por parte de las fuerzas paramilitares. Cientos de familias sufren un desplazamiento masivo. En medio de este proceso, un colectivo de mujeres, las Tejedoras de Mampuján, realizan tapices como terapia al trauma, reconstrucción de la memoria y apuesta por la paz.",
+    "directorsStatementDescription": "¿Acaso necesitamos mostrar mas imágenes del horror? ¿Queda alguna sensibilidad que no haya sido adormecida por esta práctica incesante de mostrar la violencia en todas sus formas?<br></br><br></br>Prefiero  creer que la ternura es una fuerza poderosa y que nos volvemos mejores personas mirando amorosamente los gestos de reparación. <br></br><br></br>Mampuján fue escenario del enfrentamiento entre paramilitares y guerrilleros. 245 familias fueron sometidas con armas y desplazadas en una sola noche. Años después volvieron. <br></br><br></br>Cortar, unir, llorar, coser, contar, fue la manera en que las Tejedoras de Mampuján atravesaron esas terribles experiencias. Sus tapices son el documento de lo que vivieron y sobrevivieron.  <br></br><br></br>Este cortometraje es la recreación de esos tapices originales. Así como las historias pasan de boca en boca, aquí pasan foto a foto y cuadro a cuadro con la esperanza de seguir bordando espacios donde valga la pena vivir.<br></br><br></br>Isabel Macias",
+    "credits": "DIRECCIÓN ISABEL MACIAS  <br></br> GUIÓN Luz Marquez, Valentina Cayetano Kelly <br></br> PRODUCCIÓN GENERAL Loana Ferrero     <br></br>ANIMACIÓN Isabel Macias y Walter Ariel Guarracino <br></br>DISEÑO Y POSTPRODUCCIÓN SONORA Alejandro Biko Gunkel   <br></br>MÚSICA ORIGINAL, VOCES Y TAMBORES Catalina Gutierrez, Ezequiel Silva, Diego Noscué   <br></br>DÉCIMAS Sebastian Gómez @cantacolombia    <br></br>GRABACIÓN Eliana Cogliati    <br></br>DIRECCIÓN DE ARTE Y REALIZACIÓN GENERAL Isabel Macias    <br></br>REALIZACIÓN DE PUPETS Malenca Felce, Loana Ferrero <br></br>REALIZACIÓN DE PROPS Malenca Felce    <br></br>ASISTENCIA DE REALIZACIÓN Victoria Esplugas   <br></br>ASISTENCIA DE COMPOSICIÓN Sofia Gatti, Lucho Tortolini, Agustín Gibert   <br></br>CORRECCIÓN DE COLOR Nadia Antonella Amorena   <br></br>DISEÑO WEB Lila Papazian   <br></br>DISTRIBUCIÓN  Animation 1908   <br></br>"
   },
   "Memory": {
     "description": "De la memoria duele lo que no encuentra lugar en la trama. Lo que no puede ser tejido, lo que permanece como hueco roto. <br></br> Una y otra vez llevamos la mano al dolor, como el perro que lame sus heridas. <br></br> A veces podemos zurcir. Y la lengua con la que nos lamíamos comienza a hablar.",
     "credits": "Dirección y animación ISABEL MACIAS <br></br> Diseño sonoro y música original ALEJANDRO BIKO GUNKEL <br></br> Corrección de color NADIA ANTONELLA AMORENA <br></br> Diseño web LILA PAPAZIAN <br></br> Distribución ANIMATION 1908 info@animation1908.com"
+  },
+  "commons": {
   }
 }
