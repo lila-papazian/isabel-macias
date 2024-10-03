@@ -40,8 +40,8 @@ export default function Home() {
             <p>{t("projects.mampujanWeavers")}</p>
           </a>
           -
-          <a href='/memorias' className='button-menu'>
-            <p>{t("projects.memories")}</p>
+          <a href='/memoria' className='button-menu'>
+            <p>{t("projects.memory")}</p>
           </a>
         </div>
 
