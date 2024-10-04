@@ -64,7 +64,8 @@ export default function Memoria({
           />
         </FramedContent>
 
-        <div
+        {/* TODO: Change images */}
+        {/* <div
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -93,7 +94,7 @@ export default function Memoria({
             alt='mosaic 4'
             style={{ height: "100%", objectFit: "cover" }}
           />
-        </div>
+        </div> */}
 
         <p>{t.rich("credits", { br: () => <br /> })}</p>
       </main>

@@ -44,6 +44,12 @@ export default function Home() {
             <p>{t("projects.memory")}</p>
           </a>
         </div>
+        <div className="movie-list">
+          <p className="label">{t("menu.studio")}:</p>
+          <a href='/sanquirino-estudio' className='button-menu'>
+            <p>{t("sanquirino")}</p>
+          </a>
+        </div>
 
         <section id='our-work'>
           <FramedContent frameSrc="/home/frame.webp">
