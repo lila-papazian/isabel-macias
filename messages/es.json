@@ -4,12 +4,14 @@
       "contactUs": "Contacto"
     },
     "menu": {
-      "distribution": "Cortos en distribución"
+      "distribution": "Cortos en distribución",
+      "studio": "Nuestro estudio"
     },
     "projects": {
       "mampujanWeavers": "Tejedoras de Mampuján",
       "memory": "Memoria"
     },
+    "sanquirino": "SanQuirino Estudio",
     "footer": "Todos los derechos reservados"
   },
   "Mampujan": {
@@ -23,6 +25,12 @@
     "description": "De la memoria duele lo que no encuentra lugar en la trama. Lo que no puede ser tejido, lo que permanece como hueco roto. <br></br> Una y otra vez llevamos la mano al dolor, como el perro que lame sus heridas. <br></br> A veces podemos zurcir. Y la lengua con la que nos lamíamos comienza a hablar.",
     "credits": "Dirección y animación ISABEL MACIAS <br></br> Diseño sonoro y música original ALEJANDRO BIKO GUNKEL <br></br> Corrección de color NADIA ANTONELLA AMORENA <br></br> Diseño web LILA PAPAZIAN <br></br> Distribución ANIMATION 1908 info@animation1908.com"
   },
-  "commons": {
+  "SanQuirino": {
+    "synopsis": "Sinopsis",
+    "staff": "DIRECCIÓN ISABEL MACIAS <br></br>GUION Valentina Cayetano Kelly<br></br>PRODUCCIÓN GENERAL  Loana Ferrero<br></br>DISEÑO SONORO Alejandro Biko Gunkel<br></br>ANIMACIÓN  Walter Ariel Guarracino, Lucho Tortolini<br></br>CORRECCIÓN DE COLOR Nadia Antonella Amorena<br></br>AMIGA DE LA MAGIA Victoria Esplugas<br></br>DISEÑO WEB Lila Papazian<br></br>",
+    "acrossTheDocks": "Entre Muelles",
+    "acrossTheDocksDetail": "Entre muelles es una telenovela en stopmotion que cuenta el reencuentro amoroso de Pablo y Emilia luego de 15 años, mientras que una multinacional amenaza con destruir el ecosistema del que forman parte. La historia sucede entre el Tigre y Puerto Madero, teniendo como ambientación central los cursos de agua y sus riberas. En esta serie de capítulos cortos, se descubre un drama romántico entretejido con un policial que inicia con el funeral del padre de Pablo, detonante de su regreso al Tigre. Cuando Pablo se reencuentra con Emilia, ella parece no sentir resentimientos por su ausencia ni siquiera cuando quedó huérfana en un episodio sin aclarar; pero tampoco desea revincularse emocionalmente con él más allá del sexo.",
+    "theApprentices": "Aprendices",
+    "theApprenticesDetail": "Los pequeños acróbatas ingresan a nuestro mundo y se encuentran con alimentos enormes en relación a su tamaño. La aventura de prepararlos pondrá en juego sus habilidades circenses y su sentido del humor."
   }
 }
