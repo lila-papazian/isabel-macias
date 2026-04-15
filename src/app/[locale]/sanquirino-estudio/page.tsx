@@ -56,7 +56,7 @@ export default function SanQuirinoEstudio() {
             summary={t("synopsis")}
             content={t("oneIslandDetail")}
           />
-            <div className="grid">
+            <div className="grid" style={{marginTop: "24px"}}>
               <div className="short">
                 <iframe
                   src="https://www.youtube.com/embed/hVQsEja7NVE"
